@@ -1,6 +1,6 @@
 {% set name = "pangeo-forge-recipes" %}
-{% set version = "0.8.2" %}
-{% set hash_val = "63512b9fe2898332a6293e60bb36e7c3e5e2643cc52767e3622a051a738c154f" %}
+{% set version = "0.8.3" %}
+{% set hash_val = "e430e8ccbefc1b6d025243114201edf1949c654a195b4c837152119efcbf3912" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -26,7 +26,7 @@ requirements:
     - fsspec >=2021.6.0
     - requests
     - aiohttp
-    - fsspec-reference-maker >=0.0.2
+    - kerchunk >=0.0.6
     - h5py >=3.3.0
     - intake
     - intake-xarray
@@ -51,7 +51,7 @@ about:
   home: https://pangeo-forge.org/
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Python library for building Pangeo Forge recipes.'
+  summary: Python library for building Pangeo Forge recipes.
   description: |
     Pangeo Forge is an open source platform for data Extraction, Transformation, 
     and Loading (ETL). The goal of Pangeo Forge is to make it easy to extract data 
