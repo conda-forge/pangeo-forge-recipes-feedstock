@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -33,6 +33,7 @@ requirements:
     - numcodecs >=0.9.0
     - rechunker >=0.4.2
     - setuptools
+    - setuptools_scm[toml] >=6.0
     - xarray >=0.18.0
     - zarr >=2.6.0
     - netcdf4
