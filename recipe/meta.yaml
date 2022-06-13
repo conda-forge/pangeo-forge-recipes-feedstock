@@ -12,13 +12,14 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python
     - pip
+    - setuptools_scm[toml] >=6.0
   run:
     - python >=3.8
     - dask
