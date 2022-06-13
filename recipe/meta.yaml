@@ -19,6 +19,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools_scm[toml] >=6.0
   run:
     - python >=3.8
     - dask
@@ -33,7 +34,6 @@ requirements:
     - numcodecs >=0.9.0
     - rechunker >=0.4.2
     - setuptools
-    - setuptools_scm[toml] >=6.0
     - xarray >=0.18.0
     - zarr >=2.6.0
     - netcdf4
