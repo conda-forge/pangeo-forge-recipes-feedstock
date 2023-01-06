@@ -1,6 +1,6 @@
 {% set name = "pangeo-forge-recipes" %}
-{% set version = "0.9.3" %}
-{% set hash_val = "2ec6b24fb5e943abe62f3e9ae194f839756ad06df1c9054146f71267fe643bce" %}
+{% set version = "0.9.4" %}
+{% set hash_val = "89f18cdea84ee850ad6a80e536f793cb522870ee28cda9c4f79b14cba69e05f5" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
     - fsspec >=2021.6.0
     - requests
     - aiohttp
-    - kerchunk >=0.0.6
+    - kerchunk >=0.0.7
     - h5py >=3.3.0
     - intake
     - intake-xarray
