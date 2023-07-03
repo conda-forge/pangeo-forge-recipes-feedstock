@@ -1,11 +1,11 @@
-About pangeo-forge-recipes
-==========================
+About pangeo-forge-recipes-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pangeo-forge-recipes-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pangeo-forge.org/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pangeo-forge-recipes-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python library for building Pangeo Forge recipes.
 
