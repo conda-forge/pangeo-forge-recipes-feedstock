@@ -23,6 +23,7 @@ requirements:
   run:
     - python >=3.8
     - apache-beam
+    - cftime
     - fsspec >=2021.6.0
     - requests
     - aiohttp
