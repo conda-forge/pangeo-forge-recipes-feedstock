@@ -1,6 +1,6 @@
 {% set name = "pangeo-forge-recipes" %}
-{% set version = "0.10.0" %}
-{% set hash_val = "c035836de3a1e280671321e17a6f81dc70682c6217f38c08acaef5221a769304" %}
+{% set version = "0.10.1" %}
+{% set hash_val = "ec039da931fec752031147b614e4af8ec729bf7ea3955e43839cc4225595c3eb" %}
 
 package:
   name: {{ name|lower }}
