@@ -1,6 +1,6 @@
 {% set name = "pangeo-forge-recipes" %}
-{% set version = "0.10.1" %}
-{% set hash_val = "ec039da931fec752031147b614e4af8ec729bf7ea3955e43839cc4225595c3eb" %}
+{% set version = "0.10.2" %}
+{% set hash_val = "b97824abd4e40e16af70d159bea4e3c83abedafb5a4bde18b8819ac66766f481" %}
 
 package:
   name: {{ name|lower }}
@@ -24,23 +24,17 @@ requirements:
     - python >=3.8
     - apache-beam
     - cftime
-    - fsspec >=2021.6.0
-    - kerchunk >=0.1.0
+    - fastparquet
+    - fsspec[http] >=2023.4.0
+    - kerchunk >=0.0.7
     - ujson
     - h5py >=3.3.0
     - numcodecs >=0.9.0
-    - setuptools
     - xarray >=0.18.0
     - zarr >=2.6.0
     - netcdf4
     - h5netcdf
-    - mypy_extensions >=0.4.2
-    # it's possible the following are no longer needed, but are required by 0.10.0 release,
-    # so would need to be changed in `pangeo-forge-recipes` first before removing here.
     - dask >=2021.11.2
-    - distributed >=2021.11.2
-    - intake >=0.6.4
-    - intake-xarray >=0.4.1
 
 test:
   imports:
