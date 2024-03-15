@@ -1,6 +1,6 @@
 {% set name = "pangeo-forge-recipes" %}
-{% set version = "0.10.5" %}
-{% set hash_val = "e8fdc72dbfe056996042493fbc45f004609787d4df15680a8a5c8e7aaa1c694e" %}
+{% set version = "0.10.6" %}
+{% set hash_val = "14bb684993208c2f3b23e62837fa6870f8c27720c264292a1e8db6af513192eb" %}
 
 package:
   name: {{ name|lower }}
@@ -21,6 +21,8 @@ requirements:
     - pip
     - setuptools_scm[toml] >=6.0
   run:
+    - dask-core >=2021.11.2
+    - fsspec >=2023.4.0
     - python >=3.8
     - apache-beam
     - cftime
@@ -31,7 +33,7 @@ requirements:
     - h5py >=3.3.0
     - numcodecs >=0.9.0
     - xarray >=0.18.0
-    - zarr >=2.6.0
+    - zarr >=2.12.0
     - netcdf4
     - h5netcdf
     - dask >=2021.11.2
