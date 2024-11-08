@@ -1,13 +1,13 @@
 {% set name = "pangeo-forge-recipes" %}
-{% set version = "0.10.7" %}
-{% set hash_val = "92497672cc40394b6cdcf27aa54a2094bdf307af1e2f5628ea3eda9876b78b3f" %}
+{% set version = "0.10.8" %}
+{% set hash_val = "ba21067978d4b96d2a7e27611291a0cbfd0b55e1e6ce8e08b41ac4fc5ec1c5a3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ hash_val }}
 
 build:
